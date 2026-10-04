@@ -17,7 +17,7 @@ where $u_f(t)$ and $u_a(t)$ are respectively the forward and angular velocities 
     Q(t) = 
     \begin{bmatrix}
         \sigma_f^2(t) & 0 \\
-        0 & \sigma_a^2(t) \\
+        0 & \sigma_a^2(t)
     \end{bmatrix},
 ```
 which is supposed to be directly added to the nominal values; moreover, $Q(t)$ changes according to a threshold on the angular velocity. The robot is equipped with a Lidar scanner which collects range measurements at predefined angles in clockwise sense. At each time step $t$, the Lidar scanner gives us a range value $\rho_k(t)$ and an angle value $\alpha_k(t)$ for each scan $k$, measured with respect to the robot’s current pose. The measurements are also corrupted by an additive white noise $v(t)$ with zero mean and covariance matrix
@@ -25,7 +25,7 @@ which is supposed to be directly added to the nominal values; moreover, $Q(t)$ c
     R = 
     \begin{bmatrix}
         \sigma_\rho^2 & 0 \\
-        0 & \sigma_\alpha^2 \\
+        0 & \sigma_\alpha^2
     \end{bmatrix}.
 ```
 Let $z(t)$ be a state variable containing the pose of the robot and the Cartesian coordinates of the landmarks. An Extended Kalman Filter (EKF) has been implemented to correct the pose of the robot using odometric data provided by the sensors and the measurements related to the landmarks spotted at each time step $t$.
