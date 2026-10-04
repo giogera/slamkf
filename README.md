@@ -1,7 +1,8 @@
 # slamkf
 Simultaneous localization and mapping (SLAM) using Kalman filtering on LIDAR data acquired from an Omron Adept MobileRobots Pioneer LX mobile robot.
 
-This project was created for an exam, so it is not maintained. 
+> [!NOTE]
+> This project is not maintained, it was created for an exam.
 
 ## Problem definition
 The robot moves in a 2D environment described by a $(x, y)$ Cartesian reference frame. The robot pose at time $t$ is defined by its spatial coordinates $x(t)$, $y(t)$, and its orientation $θ(t)$ with respect to the $x$ axis. The robot motion model is described by the discrete-time equations
