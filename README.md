@@ -33,10 +33,10 @@ Let $z(t)$ be a state variable containing the pose of the robot and the Cartesia
 
 ## Repository structure
 ```
-.
+slamkf/
 ├── lidar_scan.mat              # Lidar scan data
-├── README.md                   # The file you are reading right now
-└── slam.m                      # Main script
+├── slam.m                      # Main script                  
+└── README.md
 ```
 
 ## Usage
